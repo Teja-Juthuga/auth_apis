@@ -1,0 +1,29 @@
+{
+  "name": "backend_task",
+  "version": "1.0.0",
+  "description": "authentication apis using express and MongoDB as",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Teja-Juthuga/auth_apis.git"
+  },
+  "author": "Teja Juthuga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Teja-Juthuga/auth_apis/issues"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
