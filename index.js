@@ -5,6 +5,7 @@ const dotenv = require("dotenv");
 const app = express();
 dotenv.config();
 
+const test = require("./routes/test.route");
 const signup = require("./routes/signup.route");
 
 app.use(cors(
@@ -16,6 +17,7 @@ app.use(express.json());
 
 // *-*-*-*-*- Routes Configuration -*-*-*-*-*-*
 
+app.use("/", test);
 app.use("/signup", signup);
 
 app.listen(process.env.PORT, () => {
