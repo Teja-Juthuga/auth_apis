@@ -3,16 +3,17 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
-const url = process.env.MONGO_URI;
-const client = new MongoClient(url);
+const uri = process.env.MONGO_COMPASS_URI;
+console.log(uri)
+const client = new MongoClient(uri);
 
-const dbName = "eCommerceApp";
+const dbName = "appUsers";
 
 async function connectDB() {
     await client.connect();
     const db = client.db(dbName);
     console.log("Connected to " + dbName);
-    return db
+    return db;
 }
 
 exports.connectDB = connectDB;
