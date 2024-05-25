@@ -30,7 +30,7 @@ const main = async (userDetails) => {
                     if (err) {
                         reject(err);
                     } else {
-                        resolve({ result : "Login Success!", token: token });
+                        resolve({ result : "Login Success!", username : user[0]['username'] ,token: token });
                     }
                 });
             });
